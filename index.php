@@ -1,9 +1,10 @@
 <?php
+
 // include config file
 include "config/config.php";
 
-// erzeuge Controller Objekt
-$selectLoop = new selectLoop();
+// create controller object
+$controller = new Controller();
 
-// starte Code
-$selectLoop->init();
+// start program
+$controller->init();

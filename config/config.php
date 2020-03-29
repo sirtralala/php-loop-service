@@ -1,13 +1,15 @@
 <?php
 
-// Fehlermeldungen des PhP Interpreters
+// include error messages of PhP interpreter
 error_reporting(E_ALL);
 
-// Dateien in anderen Dateien einfügen
-include "controller/selectLoop.php";
-include "models/loops.php";
-include "views/displayResult.php";
+// import data structure
+include "controller/Controller.php";
+include "controller/Loop.php";
+include "controller/forLoop/ForLoop.php";
+include "controller/forEachLoop/ForEachLoop.php";
+include "controller/whileLoop/WhileLoop.php";
+include "views/DisplayResult.php";
 
-// Konstante erzeugen und in jedem File der Anwendung verfügbar machen
-define("DATAPATH", 'C:\xampp\htdocs\Uebung2_php_loops\data\\');
-
+// create constant, make available in each file
+define("DATAPATH", 'C:\xampp\htdocs\php-loop-service-master\model\\');

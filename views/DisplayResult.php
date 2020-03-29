@@ -1,7 +1,7 @@
 <?php
 
-
-class displayResult {
+class DisplayResult
+{
     public function __construct()
     {
         header('Content-Type: application/json');
@@ -13,6 +13,6 @@ class displayResult {
         $jsonOutput = json_encode($resultObject);
 
         // send result to client
-        echo "\njsonOutput test: " . $jsonOutput;
+        echo $jsonOutput;
     }
 }
