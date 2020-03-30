@@ -24,7 +24,7 @@ class Controller
         $abcFilePath = DATAPATH . "input.json";
         $abcRaw = file_get_contents($abcFilePath);
         $abcObject = json_decode($abcRaw);
-        $this->abcArray = $abcObject->abc; // sollte nun array mit dem abc sein
+        $this->abcArray = $abcObject->abc; // array is now filled with alphabet characters
     }
 
     private function chooseLoop($loopType)
@@ -66,7 +66,6 @@ class Controller
             $loopType = $_GET['loopType'];
             $this->chooseLoop($loopType);
         }
-
         else
             echo "No query parameter loopType found!";
     }
